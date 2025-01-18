@@ -14,5 +14,11 @@ MOVIE SELECTOR PROJECT
 
 */
 
+// radio buttons
 
-
+let radioButtonsList = document.getElementsByName('btnRadio');
+for (let radio of radioButtonsList) {
+        radio.addEventListener('change', (event) => {
+                console.log(event.target.id);
+        })
+}
