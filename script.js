@@ -14,8 +14,35 @@ MOVIE SELECTOR PROJECT
 
 */
 
+function cardMaker(idCard, title, imgSrc, text, genre, year) {
+        // card wrapper
+        let card = document.getElementById(idCard);
+        card.style.width = '18rem';
+        card.classList.add('card');
+        // image
+        let image = document.createElement('img');
+        image.src = imgSrc;
+        image.classList.add('card-img-top');
+        card.appendChild(image);
+        // div card-body
+        let divCardBody = document.createElement('div');
+        divCardBody.classList.add('card-body');
+        // p card-text
+        let cardText = document.createElement('p');
+        cardText.classList.add('card-text');
+        cardText.innerHTML = `<strong>${title}</strong> - ${text} <strong>${genre} ${year}</strong>`
+        divCardBody.appendChild(cardText);
+        card.appendChild(divCardBody);
+        return card
+}
 
-// card wrapper
+let card1 = cardMaker('card1', 'kill', 'img/kill.jpg', 'test body of the card', 'action', 2000);
+
+console.log(card1);
+
+
+
+/* EVERYTHING WORKS
 let card1 = document.getElementById('card1');
 card1.style.width = '18rem';
 card1.classList.add('card');
@@ -43,6 +70,5 @@ cardText.innerHTML = `<strong>SURVIVE</strong>
 
 divCardBody.appendChild(cardText);
 card1.appendChild(divCardBody);
-
-console.log(card1);
+*/
 
