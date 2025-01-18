@@ -37,7 +37,7 @@ let card2 = cardMaker('card2',
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
             sarà forse troppo tardi. `,
-    'action',
+    'kids',
     2000);
 
 let card3 = cardMaker('card3',
@@ -47,7 +47,7 @@ let card3 = cardMaker('card3',
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
             sarà forse troppo tardi. `,
-    'action',
+    'adventure',
     2000);
 
 let card4 = cardMaker('card4',
@@ -67,7 +67,7 @@ let card5 = cardMaker('card5',
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
             sarà forse troppo tardi. `,
-    'action',
+    'adventure',
     2000);
 
 let card6 = cardMaker('card6',
@@ -77,7 +77,7 @@ let card6 = cardMaker('card6',
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
             sarà forse troppo tardi. `,
-    'action',
+    'kids',
     2000);
 
 let card7 = cardMaker('card7',
@@ -87,7 +87,7 @@ let card7 = cardMaker('card7',
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
             sarà forse troppo tardi. `,
-    'action',
+    'adventure',
     2000);
 
 let card8 = cardMaker('card8',
@@ -107,5 +107,5 @@ let card9 = cardMaker('card9',
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
             sarà forse troppo tardi. `,
-    'action',
+    'kids',
     2000);
