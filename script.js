@@ -60,5 +60,15 @@ darkMode.addEventListener('click', () => {
         footer[0].classList.toggle('border-success-subtle');
 })
 
-// modal
+// form validator
+let nameLabel = document.getElementById('nameLabel');
+let nameInput = document.getElementById('nameInput');
+let emailLabel = document.getElementById('emailLabel');
+let emailInput = document.getElementById('emailInput');
+let checksLabel = document.getElementById('checksLabel');
+let checkboxesList = document.getElementsByClassName('form-check-input');
+
+for (let check of checkboxesList) {
+        console.log(check.value);
+}
 

@@ -42,7 +42,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
             <button
               type="button"
               class="btn-close"
@@ -54,148 +54,151 @@
             <!-- form -->
             <form action="">
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
+                <label id="nameLabel" for="nameInput" class="form-label"
                   >Name</label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Your name"
+                  id="nameInput"
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
+                <label id="emailLabel" for="emailInput" class="form-label"
                   >Email address</label
                 >
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
+                  id="emailInput"
                 />
               </div>
               <!-- check boxes -->
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="action"
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Action
-                </label>
-              </div>
-              
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="kids"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Kids
-                </label>
-              </div>
+              <p id="checksLabel">Choose at least 3 genres</p>
+              <div class="row">
+                <div class="col-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="action"
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Action
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="adventure"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Adventure
-                </label>
-              </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="kids"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Kids
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="comedy"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Comedy
-                </label>
-              </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="adventure"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Adventure
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="crime"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Crime
-                </label>
-              </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="comedy"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Comedy
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="fantasy"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Fantasy
-                </label>
-              </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="crime"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Crime
+                    </label>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="fantasy"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Fantasy
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="war"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  War
-                </label>
-              </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="war"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      War
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="horror"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Horror
-                </label>
-              </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="horror"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Horror
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="musical"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Musical
-                </label>
-              </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="musical"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Musical
+                    </label>
+                  </div>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="romantic"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Romantic
-                </label>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="romantic"
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Romantic
+                    </label>
+                  </div>
+                </div>
               </div>
-
               <!-- END check boxes -->
             </form>
             <!--END form -->
@@ -208,7 +211,7 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
