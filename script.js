@@ -67,12 +67,7 @@ function emailChecker(email) {
         }
         return true;
 }
-
-// function errorMessage(){
-//         return `<strong class=''> </strong>`
-// }
-
-
+let formTag = document.getElementsByTagName('form');
 let nameLabel = document.getElementById('nameLabel');
 let nameInput = document.getElementById('nameInput');
 let emailLabel = document.getElementById('emailLabel');
@@ -80,7 +75,7 @@ let emailInput = document.getElementById('emailInput');
 let checksLabel = document.getElementById('checksLabel');
 let checkboxesList = document.getElementsByClassName('form-check-input');
 let submitButton = document.getElementById('submitButton');
-
+console.log(formTag);
 // on focus the red disappears in the fields: 'name' and 'email' and 'wrong input on the label' 
 nameInput.addEventListener('focus', () => {
         nameInput.classList.remove('bg-danger');
@@ -99,17 +94,19 @@ for (let check of checkboxesList) {
 }
 
 submitButton.addEventListener('click', (event) => {
+        let isValidate = true;
         event.preventDefault();
         // validate name
         if (!nameInput.value) {
                 nameInput.classList.add('bg-danger');
                 nameLabel.innerHTML = `Name <strong class="text-danger">wrong input</strong>`;
-                console.log(nameLabel.innerHTML);
+                isValidate = false;
         }
         // validate email
         if (!emailChecker(emailInput.value)) {
                 emailInput.classList.add('bg-danger');
                 emailLabel.innerHTML = `Email address <strong class="text-danger">wrong input</strong>`;
+                isValidate = false;
         }
         // loop to count ho many checks are selected
         let checked = 0;
@@ -120,6 +117,10 @@ submitButton.addEventListener('click', (event) => {
         }
         if (checked < 3) {
                 checksLabel.innerHTML = `Choose at least 3 genres <strong class="text-danger">choose more please</strong>`
+                isValidate = false;
+        }
+        if (isValidate){
+               formTag[0].submit();
         }
 })
 
