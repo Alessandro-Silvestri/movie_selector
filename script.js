@@ -61,6 +61,13 @@ darkMode.addEventListener('click', () => {
 })
 
 // form validator
+function emailChecker(email) {
+        if (!email.includes('.') || (!email.includes('@')) || (email.includes(' '))) {
+                return false;
+        }
+        return true;
+}
+
 let nameLabel = document.getElementById('nameLabel');
 let nameInput = document.getElementById('nameInput');
 let emailLabel = document.getElementById('emailLabel');
@@ -70,6 +77,26 @@ let checkboxesList = document.getElementsByClassName('form-check-input');
 let submitButton = document.getElementById('submitButton');
 
 submitButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        // validate name
+        if (!nameInput.value) {
+                alert('Name is mandatary');
+        }
+        debugger;
+        // validate email
+        if (!emailChecker(emailInput.value)) {
+                alert('email: wrong input');
+        }
+        // loop to count ho many checks are selected
+        let checked = 0;
+        for (let checkInput of checkboxesList) {
+                if (checkInput.checked) {
+                        checked++;
+                }
+        }
+        if (checked < 3) {
+                alert('Please select at least 3 genres')
+        }
 
 })
 
