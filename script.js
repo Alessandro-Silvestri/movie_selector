@@ -67,8 +67,13 @@ let emailLabel = document.getElementById('emailLabel');
 let emailInput = document.getElementById('emailInput');
 let checksLabel = document.getElementById('checksLabel');
 let checkboxesList = document.getElementsByClassName('form-check-input');
+let submitButton = document.getElementById('submitButton');
 
-for (let check of checkboxesList) {
-        console.log(check.value);
-}
+submitButton.addEventListener('click', (event) => {
+
+})
+
+
+/////// check if the 'check' is checked
+// console.log(checkboxesList[0].checked);
 
