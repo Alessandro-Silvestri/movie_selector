@@ -68,6 +68,11 @@ function emailChecker(email) {
         return true;
 }
 
+// function errorMessage(){
+//         return `<strong class=''> </strong>`
+// }
+
+
 let nameLabel = document.getElementById('nameLabel');
 let nameInput = document.getElementById('nameInput');
 let emailLabel = document.getElementById('emailLabel');
@@ -76,16 +81,35 @@ let checksLabel = document.getElementById('checksLabel');
 let checkboxesList = document.getElementsByClassName('form-check-input');
 let submitButton = document.getElementById('submitButton');
 
+// on focus the red disappears in the fields: 'name' and 'email' and 'wrong input on the label' 
+nameInput.addEventListener('focus', () => {
+        nameInput.classList.remove('bg-danger');
+        nameLabel.innerHTML = "Name";
+})
+
+emailInput.addEventListener('focus', () => {
+        emailInput.classList.remove('bg-danger');
+        emailLabel.innerHTML = "Email address";
+})
+
+for (let check of checkboxesList) {
+        check.addEventListener('focus', () =>{
+                checksLabel.innerHTML = "Choose at least 3 genres";
+        })
+}
+
 submitButton.addEventListener('click', (event) => {
         event.preventDefault();
         // validate name
         if (!nameInput.value) {
-                alert('Name is mandatary');
+                nameInput.classList.add('bg-danger');
+                nameLabel.innerHTML = `Name <strong class="text-danger">wrong input</strong>`;
+                console.log(nameLabel.innerHTML);
         }
-        debugger;
         // validate email
         if (!emailChecker(emailInput.value)) {
-                alert('email: wrong input');
+                emailInput.classList.add('bg-danger');
+                emailLabel.innerHTML = `Email address <strong class="text-danger">wrong input</strong>`;
         }
         // loop to count ho many checks are selected
         let checked = 0;
@@ -95,12 +119,8 @@ submitButton.addEventListener('click', (event) => {
                 }
         }
         if (checked < 3) {
-                alert('Please select at least 3 genres')
+                checksLabel.innerHTML = `Choose at least 3 genres <strong class="text-danger">choose more please</strong>`
         }
-
 })
 
-
-/////// check if the 'check' is checked
-// console.log(checkboxesList[0].checked);
 
