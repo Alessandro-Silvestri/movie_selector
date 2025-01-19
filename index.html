@@ -15,6 +15,7 @@
       /* div {
         border: 1px solid red;
       } */
+
     </style>
   </head>
   <body>
@@ -22,6 +23,7 @@
 
     <!-- modal button  -->
     <button
+    id="subscribeButton"
       type="button"
       class="btn btn-primary"
       data-bs-toggle="modal"
@@ -69,7 +71,7 @@
                   >Email address</label
                 >
                 <input
-                name="email_input"
+                  name="email_input"
                   type="email"
                   class="form-control"
                   id="emailInput"
@@ -213,7 +215,7 @@
                 </div>
               </div>
               <!-- END check boxes -->
-               <!-- buttons close and submit -->
+              <!-- buttons close and submit -->
               <div class="modal-footer">
                 <button
                   type="button"
@@ -222,13 +224,11 @@
                 >
                   Close
                 </button>
-                <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
-               <!--END buttons close and submit -->
+                <button id="submitButton" type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </div>
             </form>
-            <!--END form -->
-          </div>
-          
-          
           </div>
         </div>
       </div>
@@ -305,6 +305,7 @@
 
     <script src="cards.js"></script>
     <script src="script.js"></script>
+    <script src="formValidator.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
