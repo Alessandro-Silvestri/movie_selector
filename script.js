@@ -59,3 +59,6 @@ darkMode.addEventListener('click', () => {
         footer[0].classList.toggle('border-top');
         footer[0].classList.toggle('border-success-subtle');
 })
+
+// modal
+
