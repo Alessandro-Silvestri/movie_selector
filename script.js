@@ -46,6 +46,7 @@ let radioButtonsNames = document.getElementsByClassName('btn-outline-primary');
 let footer = document.getElementsByTagName('footer');
 let subscribeButton = document.getElementById('subscribeButton');
 let modalBg = document.getElementsByClassName('modal-content');
+let headerTag = document.getElementById('headerTag');
 
 darkMode.addEventListener('click', () => {
         // card green, text white
@@ -71,8 +72,17 @@ darkMode.addEventListener('click', () => {
         footer[0].classList.toggle('border-top');
         footer[0].classList.toggle('border-success-subtle');
 
+        // border to the header
+        headerTag.classList.toggle('border-bottom');
+        headerTag.classList.toggle('border-success-subtle');
+
+        // submit button
         subscribeButton.classList.toggle('bg-success');
         subscribeButton.classList.toggle('text-light');
+
+        // dark mode button
+        darkMode.classList.toggle('bg-success');
+        darkMode.classList.toggle('text-light');
 })
 
 

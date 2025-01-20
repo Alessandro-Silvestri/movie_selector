@@ -15,23 +15,35 @@
       /* div {
         border: 1px solid red;
       } */
-
     </style>
   </head>
   <body>
-    <button id="darkMode">dark mode</button>
 
-    <!-- modal button  -->
-    <button
-    id="subscribeButton"
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Subscribe
-    </button>
-    <!-- END modal button  -->
+    <!-- top header -->
+    <div id="headerTag" class="container-fluid bg-dark p-5">
+      <div class="container p-5">
+        <div class="row g-4">
+          <div class="col-lg-9">
+            <h1 class="text-light">Movie selector</h1>
+          </div>
+          <div class="col-lg-1">
+            <button
+            id="subscribeButton"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Subscribe
+          </button>
+          </div>
+          <div class="col-lg-2">
+            <button class="btn btn-primary" id="darkMode">dark mode</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END top header -->
 
     <!-- Modal -->
     <div
