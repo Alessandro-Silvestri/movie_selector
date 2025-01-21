@@ -21,91 +21,116 @@ function cardMaker(idCard, title, imgSrc, text, genre, year) {
     return card
 }
 
-let card1 = cardMaker('card1',
-    'Back in Action',
-    'img/back_action.jpg', `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+let moviesObj = [
+    {
+        idCard : "card1",
+        title : "Back in Action",
+        imgSrc : "img/back_action.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'action',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "action",
+        year : 2000
+    },
 
-let card2 = cardMaker('card2',
-    'Buffalo kids',
-    'img/buffalo_kids.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card2",
+        title : "Buffalo kids",
+        imgSrc : "img/buffalo_kids.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'kids',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "kids",
+        year : 2000
+    },
 
-let card3 = cardMaker('card3',
-    'Damaged',
-    'img/damaged.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card3",
+        title : "Damaged",
+        imgSrc : "img/damaged.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'adventure',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "adventure",
+        year : 2000
+    },
 
-let card4 = cardMaker('card4',
-    'Kill',
-    'img/kill.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card4",
+        title : "Kill",
+        imgSrc : "img/kill.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'action',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "action",
+        year : 2000
+    },
 
-let card5 = cardMaker('card5',
-    'Megalopolis',
-    'img/megalopolis.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card5",
+        title : "Megalopolis",
+        imgSrc : "img/megalopolis.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'adventure',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "adventure",
+        year : 2000
+    },
 
-let card6 = cardMaker('card6',
-    'Mufasa',
-    'img/mufasa.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card6",
+        title : "Mufasa",
+        imgSrc : "img/mufasa.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'kids',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "kids",
+        year : 2000
+    },
 
-let card7 = cardMaker('card7',
-    'Nosferatu',
-    'img/nosferatum.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card7",
+        title : "Nosferatu",
+        imgSrc : "img/nosferatum.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'adventure',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "adventure",
+        year : 2000
+    },
 
-let card8 = cardMaker('card8',
-    'Public disorder',
-    'img/pub_disorder.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card8",
+        title : "DamPublic disorderaged",
+        imgSrc : "img/pub_disorder.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'action',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "action",
+        year : 2000
+    },
 
-let card9 = cardMaker('card9',
-    'Sonic 3',
-    'img/sonic3.jpg',
-    `Una catastrofe scuote il pianeta: i poli magnetici della Terra
+    {
+        idCard : "card9",
+        title : "Sonic 3",
+        imgSrc : "img/sonic3.jpg",
+        text : `Una catastrofe scuote il pianeta: i poli magnetici della Terra
             si sono invertiti e in questo mondo devastato una famiglia deve
             lottare per la sopravvivenza. Quando i poli si invertiranno di nuovo,
-            sarà forse troppo tardi. `,
-    'kids',
-    2000);
+            sarà forse troppo tardi.`,
+        genre : "kids",
+        year : 2000
+    },
+]
+
+for (let movie of moviesObj) {
+    cardMaker(movie.idCard, movie.title, movie.imgSrc, movie.text, movie.genre, movie.year);
+}
