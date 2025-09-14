@@ -131,6 +131,7 @@ let moviesObj = [
     },
 ]
 
+// cards creation
 for (let movie of moviesObj) {
     cardMaker(movie.idCard, movie.title, movie.imgSrc, movie.text, movie.genre, movie.year);
 }
